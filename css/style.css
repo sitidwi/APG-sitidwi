@@ -1,0 +1,212 @@
+
+/* CSS.login.html*/ 
+*{
+    box-sizing: border-box;
+}
+
+/* Mengatur font yang dipakai dan background halaman*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #038ade;
+}
+
+/* mengatur container menjadi layout flebox dan login ditengah*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* membuat kotak form login lebar 480px dan backgroun putih*/
+.login-box {
+    margin-top: 150px;
+    flex-basis: 480px;
+    background: #fff;
+    padding: 20px;
+}
+
+/* mengatur judul form dengan border bawah dan posisi di tengah */
+
+.login-box h2{
+    border-bottom: 1px solid black;
+    color: #555;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+}
+
+/* mengatur agar tag input dan select memenuhi container dan tampilan lebih bagus*/
+input,
+select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid cyan;
+}
+
+/*mengatur tombol submit*/
+input[type="submit"] {
+    background-color: #038ade;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+    color: #038ade;
+}
+
+/* CSS.Login*/ 
+
+/* CSS File Dahboard.html */
+
+/* mengatur desain header */
+header{
+    background: #038ade;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+/* mengatur lebar menu 20 % dengan bacground hitam */
+
+footer{
+   flex: 20%;
+    background: #222;
+}
+
+/* mengatur lebar konten utama 80% dengan background putih */
+section.main{
+    flex: 80;
+    background: #fff;
+    min-height: 530px;
+    padding: 15px;
+}
+
+/* mengatur footer dengan background abu-abu dan teks ditengah */
+footer{
+    background: #ccc;
+    color: #555;
+    padding: 20px;
+    text-align: center;
+}
+
+/* mengatur layout pada layar kecil (responsif) */
+@media (max-width: 700px){
+    .comtainer{
+        flex-direction: column;
+    }
+}
+
+/* navigasi */
+/* Membuang padding tag <ul> */
+.menu {
+    padding: 0;
+}
+
+/* Menambah border bawah tag <li> */
+
+.menu li {
+    border-bottom: 1px solid dotted #444;
+}
+
+/* mengatur desain menu yang dibuat dengan tag a */
+.menu a{
+    display: block;
+    padding: 20px 20px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CSS File Dahboard.html */
+
+/* CSS file tabel.html */
+/* mengatur desain judul halaman dengan horder di bawah */
+.judul{
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+/* mengatur agar lebar tabel penuh dan antar border tidak memiliki jaraak */
+.tabel{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* menambahkan border dan padding pada sel tabel */
+.table th, .table td{
+    border: 1px sp;display: #ccc;
+    padding: 10px;
+}
+
+/* mengatur background bagian judul tabel */
+.table th{
+    background: #eee;
+}
+
+/* mengatur desain tombol yang dibuat dengan tag <a> */
+.tombol{
+    display: inline-block;
+    max-width: 158px;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: #038ade;
+    cursor: pointer;
+}
+
+/* desain tombol edit dan hapus agar lebih kecil */
+.tombol.edit, .tombol.hapus{
+    padding: 10px 15px;
+    font-size: 12px;
+}
+.tombol.tombol.hapus{
+    background: #fc4c4c;
+}
+
+/* tambahan dari saya agar teks di tengah */
+.table tr{
+    text-align: center;
+}
+
+/* CSS file tabel.html */
+
+/* CSS file form.html */
+/* mengatur form.html agar tidak terpengaruh float */
+.form-group{
+    clear: both;
+}
+
+/* mengatur lebar label 30% dengan teks bold */
+.form-group label{
+    display: block;
+    padding: 15px 0;
+    float: left;
+    width: 30%;
+    font-weight: bold;
+}
+
+/* mengatur input radio, tombol submit dan reset */
+input[type=radio]{
+    width: 50px;
+}
+.tombol.simpan{
+    background: #038ade;
+}
+.tombol.reset{
+    background: #fb8307;
+}
+
+/* membuat tampilan form menumpuk pada layar kecil */
+@media (max-width:700px){
+    .form-group label, .form-group.input{
+        width: 100%;
+    }
+}
